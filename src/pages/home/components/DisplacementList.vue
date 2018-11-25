@@ -66,13 +66,13 @@
         align-items: center;
         justify-content: center;
         flex-wrap:wrap;
-        max-width:250px;
+        max-width:280px;
         overflow-y: auto;
     }
 
     .displacement-image {
-        width:100px;
-        height:100px;
+        width:80px;
+        height:80px;
         margin:10px;
         object-fit: cover;
         cursor:pointer;
