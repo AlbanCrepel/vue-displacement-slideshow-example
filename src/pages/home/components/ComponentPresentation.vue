@@ -6,9 +6,12 @@
                data-size="large"
                aria-label="Star AlbanCrepel/vue-displacement-slideshow on GitHub">Star</a>
         </div>
-        <h2>Webgl image displacement transitions made simple.</h2>
 
-        <displacement-list></displacement-list>
+        <div class="presentation-content">
+            <h2>Webgl image displacement transitions made simple.</h2>
+
+            <displacement-list></displacement-list>
+        </div>
     </section>
 </template>
 
@@ -31,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         padding:65px 20px 0 20px;
+        min-width: 0;
     }
 
     h2 {
@@ -45,4 +49,27 @@
         align-self:flex-end;
     }
 
+    .presentation-content {
+        display: flex;
+        justify-content: center;
+        height:100%;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: $responsive-width) {
+        .component-presentation-section {
+            padding:20px;
+            flex: 0 0 auto;
+        }
+
+        .presentation-content{
+            justify-content: flex-start;
+            height:auto;
+        }
+
+        .slideshow-wrapper{
+            width:100%;
+            height:90vh;
+        }
+    }
 </style>

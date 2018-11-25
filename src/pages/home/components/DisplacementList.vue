@@ -67,6 +67,7 @@
         justify-content: center;
         flex-wrap:wrap;
         max-width:250px;
+        overflow-y: auto;
     }
 
     .displacement-image {

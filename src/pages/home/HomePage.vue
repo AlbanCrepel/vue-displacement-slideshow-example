@@ -78,8 +78,8 @@
     }
 
     .slideshow-wrapper {
-        flex:2;
         position:relative;
+        min-width:66vw;
     }
 
     .slideshow {
@@ -103,10 +103,6 @@
         text-shadow:0 10px 35px rgba(0,0,0,0.2);
     }
 
-    .presentation {
-        flex:1;
-    }
-
     .slideshow-navigation-wrapper{
         position:absolute;
         bottom:0px;
@@ -119,6 +115,30 @@
         width:15px;
         padding:15px 25px;
         cursor:pointer;
+    }
+
+    @media screen and (max-width: $large-screen) {
+        h1 {
+            max-width: 900px;
+        }
+    }
+
+    @media screen and (max-width: $responsive-width) {
+        .homepage {
+            flex-direction:column;
+            overflow: auto;
+        }
+
+        .slideshow-wrapper{
+            width:100%;
+            height:90vh;
+        }
+    }
+
+    @media screen and (max-width: $small-screen) {
+        h1 {
+            font-size:32px;
+        }
     }
 
 </style>
